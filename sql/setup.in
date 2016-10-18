@@ -1,0 +1,254 @@
+/*
+** Default configuration parameters
+**
+** ex: syntax=sql
+*/
+
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ActiveDiscoveryInterval','7200',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ActiveNetworkDiscovery','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AgentCommandTimeout','4000',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AgentDefaultSharedSecret','netxms',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AgentUpgradeWaitTime','600',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AlarmHistoryRetentionTime','180',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AlarmListDisplayLimit','4096',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AllowDirectSMS','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AllowedCiphers','63',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AllowTrapVarbindsConversion','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AnonymousFileAccess','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ApplyDCIFromTemplateToDisabledDCI','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('AuditLogRetentionTime','90',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('BeaconHosts','',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('BeaconPollingInterval','1000',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('BeaconTimeout','1000',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('BlockInactiveUserAccounts','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('CapabilityExpirationTime','604800',1,0);  /* in seconds */
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('CaseInsensitiveLoginNames','0',1,1,'B','Enable/disable case insensitive login names');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('CheckTrustedNodes','0',1,1,'B','Enable/disable trusted nodes check');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ClientListenerPort','4701',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ConditionPollingInterval','60',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ConfigurationPollingInterval','3600',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,is_public,description) VALUES ('DashboardDataExportEnableInterpolation','1',1,1,'B','Y','Enable/disable data interpolation in dashboard data export');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBConnectionPoolBaseSize','10',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBConnectionPoolCooldownTime','300',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBConnectionPoolMaxLifetime','14400',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBConnectionPoolMaxSize','30',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBLockInfo','',0,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBLockPID','0',0,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DBLockStatus','UNLOCKED',0,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultAgentCacheMode','2',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultConsoleDateFormat','dd.MM.yyyy',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultConsoleShortTimeFormat','HH:mm',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultConsoleTimeFormat','HH:mm:ss',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultDCIPollingInterval','60',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultDCIRetentionTime','30',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultEncryptionPolicy','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('DefaultInterfaceExpectedState','1',1,0,'C','Default expected state for new interface objects');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DefaultMapBackgroundColor','0xffffff',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('DefaultSubnetMaskIPv4','24',1,0,'I','Default mask for synthetic IPv4 subnets');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('DefaultSubnetMaskIPv6','64',1,0,'I','Default mask for synthetic IPv6 subnets');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DeleteAlarmsOfDeletedObject','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DeleteEmptySubnets','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DeleteEventsOfDeletedObject','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DeleteUnreachableNodesPeriod','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DiscoveryFilter','none',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DiscoveryFilterFlags','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('DiscoveryPollingInterval','900',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableAdminInterface','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableAgentRegistration','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableAuditLog','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableCheckPointSNMP','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableEventStormDetection','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableISCListener','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableNXSLContainerFunctions','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableObjectTransactions','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableSNMPTraps','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableSyslogReceiver','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableTimedAlarmAck','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableXMPPConnector','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EnableZoning','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EscapeLocalCommands','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EventLogRetentionTime','90',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EventStormDuration','15',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('EventStormEventsPerSecond','100',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExtendedLogQueryAccessControl','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExternalAuditFacility','13',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExternalAuditPort','514',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExternalAuditServer','none',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExternalAuditSeverity','5',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ExternalAuditTag','netxmsd-audit',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('FirstFreeObjectId','100',0,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('FixedStatusValue','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('HelpDeskLink','none',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('HousekeeperStartTime','02:00',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('IcmpPingSize','46',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('IcmpPingTimeout','1500',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('ImportConfigurationOnStartup','1',1,1,'B','Import configuration from local files on server startup');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('InstancePollingInterval','600',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('InternalCA','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('IntruderLockoutThreshold','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('IntruderLockoutTime','30',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('JobHistoryRetentionTime','90',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('JobRetryCount','5',1,0,'I','Maximum mumber of job execution retrys');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('KeepAliveInterval','60',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapGroupClass','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapGroupUniqueId','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapConnectionString','ldap://localhost:389',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapMappingDescription','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapMappingFullName','displayName',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapMappingName','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapPageSize','1000',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapSearchBase','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapSearchFilter','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapSyncInterval','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapSyncUser','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapSyncUserPassword','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapUserClass','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapUserDeleteAction','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LdapUserUniqueId','',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LockTimeout','60000',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('LogAllSNMPTraps','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('MailEncoding','utf8',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('MinPasswordLength','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('MinViewRefreshInterval','1000',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('MobileDeviceListenerPort','4747',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('NumberOfDataCollectors','25',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('NumberOfUpgradeThreads','10',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('OfflineDataRelevanceTime','86400',1,1,'I','Time period in seconds within which received offline data still relevant for threshold validation');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PasswordComplexity','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PasswordExpiration','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PasswordHistoryLength','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PollCountForStatusChange','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PollerThreadPoolBaseSize','10',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('PollerThreadPoolMaxSize','250',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSNumRetries','5',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSPort','1645',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSSecondaryPort','1645',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSSecondarySecret','netxms',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSSecondaryServer','none',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSSecret','netxms',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSServer','none',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RADIUSTimeout','3',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ReceiveForwardedEvents','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ResolveDNSToIPOnStatusPoll','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ResolveNodeNames','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RoutingTableUpdateInterval','300',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('RunNetworkDiscovery','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ServerCommandOutputTimeout','60',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMSDriver','<none>',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMSDrvConfig','',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMTPFromAddr','netxms@localhost',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMTPFromName','NetXMS Server',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMTPRetryCount','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SNMPPorts','161',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SMTPServer','localhost',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SNMPRequestTimeout','1500',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SNMPTrapLogRetentionTime','90',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SNMPTrapPort','162',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusCalculationAlgorithm','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusPollingInterval','60',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusPropagationAlgorithm','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusShift','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusSingleThreshold','75',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusThresholds','503C2814',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StatusTranslation','01020304',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('StrictAlarmStatusFlow','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SyncInterval','60',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SyncNodeNamesWithDNS','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('SyslogIgnoreMessageTimestamp','0',1,0,'B','Ignore timestamp received in syslog messages and always use server time');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SyslogListenPort','514',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SyslogNodeMatchingPolicy','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('SyslogRetentionTime','90',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('ThresholdRepeatInterval','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('TileServerURL','http://tile.openstreetmap.org/',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('TopologyDiscoveryRadius','3',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('TopologyExpirationTime','900',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart,data_type,description) VALUES ('TrapSourcesInAllZones','0',1,1,'B','Search all zones to match trap/syslog source address to node');
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('UseDNSNameForDiscoveredNodes','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('UseFQDNForNodeNames','1',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('UseIfXTable','1',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('UseInterfaceAliases','0',1,0);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('UseSNMPTrapsForDiscovery','0',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('XMPPLogin','netxms@localhost',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('XMPPPassword','netxms',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('XMPPPort','5222',1,1);
+INSERT INTO config (var_name,var_value,is_visible,need_server_restart) VALUES ('XMPPServer','localhost',1,1);
+
+/*
+** System user
+*/
+INSERT INTO users (id,name,password,system_access,flags,full_name,
+                   description,grace_logins,auth_method,guid,
+                   cert_mapping_method,cert_mapping_data,
+                   auth_failures,last_passwd_change,min_passwd_length,
+                   disabled_until,last_login)
+   VALUES (0,'system',
+           '3A445C0072CD69D9030CC6644020E5C4576051B1', /* Default password: netxms */
+           274877906943,12,'','Built-in system account',5,0,  /* Flags: change password + disabled */
+           '00000000-0000-0000-0000-000000000000',0,'',0,0,0,0,0
+          );
+
+/*
+** Default admin user
+*/
+INSERT INTO users (id,name,password,system_access,flags,full_name,
+                   description,grace_logins,auth_method,guid,
+                   cert_mapping_method,cert_mapping_data,
+                   auth_failures,last_passwd_change,min_passwd_length,
+                   disabled_until,last_login)
+   VALUES (1,'admin',
+           '3A445C0072CD69D9030CC6644020E5C4576051B1', /* Default password: netxms */
+           0,8,'','Default administrator account',5,0,
+           '00000000-0000-0000-0000-000000000000',0,'',0,0,0,0,0
+          );
+
+/*
+** Special "Everyone" user group
+*/
+INSERT INTO user_groups (id,name,system_access,flags,description,guid)
+   VALUES (-2147483648, 'Everyone', 16, 0, 'Built-in everyone group',
+           '00000000-0000-0000-0000-000000000000'
+          );
+
+/*
+** Default "Admins" group
+*/
+INSERT INTO user_groups (id,name,system_access,flags,description,guid)
+   VALUES (-2147483647, 'Admins', 274877906943, 0, 'Default administrative group',
+           '00000000-0000-0000-0000-000000000000'
+          );
+
+INSERT INTO user_group_members (group_id,user_id) VALUES (-2147483647,1);
+
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (1,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (2,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (3,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (4,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (5,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (6,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (7,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (8,-2147483647,32767);
+INSERT INTO acl (object_id,user_id,access_rights) VALUES (9,-2147483647,32767);
+
+/*
+** Default event groups
+*/
+
+#define ID_GROUP_1 -2147483647
+#define ID_GROUP_2 -2147483646
+
+INSERT INTO event_groups (id,name,description,range_start,range_end)
+   VALUES (ID_GROUP_1,'NodeStatus','All events reporting about node status change',0,0);
+INSERT INTO event_groups (id,name,description,range_start,range_end)
+   VALUES (ID_GROUP_2,'NewObjects','All events reporting about new objects creation',0,0);
+
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_NORMAL);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_MINOR);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_WARNING);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_MAJOR);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_CRITICAL);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_UNKNOWN);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_1,EVENT_NODE_UNMANAGED);
+
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_2,EVENT_NODE_ADDED);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_2,EVENT_SUBNET_ADDED);
+INSERT INTO event_group_members (group_id,event_code) VALUES (ID_GROUP_2,EVENT_INTERFACE_ADDED);
